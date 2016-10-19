@@ -146,6 +146,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="NameScore.h" />
+    <ClInclude Include="NameScoreSorter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NameScore.cpp" />
+    <ClCompile Include="NameScoreSorter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
