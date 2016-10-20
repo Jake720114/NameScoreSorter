@@ -46,10 +46,13 @@ public:
 	}
 
 	void sortDescOrderByScoreAndLastName() {
-		sort(v.begin(), v.end(), std::bind(std::logical_and<bool>(),
-			std::bind(descByScore, std::placeholders::_1, std::placeholders::_2),
-			std::bind(descByLastName, std::placeholders::_1, std::placeholders::_2)));
+		//sort(v.begin(), v.end(), std::bind(std::logical_and<bool>(),
+		//	std::bind(descByScore, std::placeholders::_1, std::placeholders::_2),
+		//	std::bind(descByLastName, std::placeholders::_1, std::placeholders::_2)));
+		sort(v.begin(), v.end(), descByScoreAndLastNameAndFirstName);
 	}
+
+
 
 	inline const std::size_t count() const {
 		return v.size();
